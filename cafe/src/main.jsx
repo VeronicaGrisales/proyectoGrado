@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Inicio from './paginas/inicio.jsx';   // Página de inicio
 import App from './App.jsx';
-import './index.css';
+import './styles/index.css';  // Estilos globales
 
 // Definir las rutas
 const router = createBrowserRouter([

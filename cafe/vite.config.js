@@ -10,7 +10,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5173, // Puertp
+    port: 5173, // Puerto
   },
   base: "/", //  muy importante para rutas
 })
