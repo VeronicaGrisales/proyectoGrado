@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: pink ;
+  min-height: 100vh; /* ocupa toda la altura de la ventana */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: block; /* 🔥 importante: quitar el flex */
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.inicio {
+  margin-top: 120px; 
+  padding: 0;
+
+}
+
+.titulop {
+  text-align: center;
+  margin-bottom: 20px 0;
+  margin-bottom: 35px;
+  font-size: 3.9rem;
+  font-weight: 80;
+  color: #6b4f3a;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+}
+
+.seccion-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imagen-inicio {
+  flex: 1; /* ocupa la mitad del espacio disponible */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -90px;
+}
+
+.imagen-inicio img {
+  /*flex: 1;*/
+  width: 90%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  justify-content: flex-end;
+}
+
+.imagen-inicio img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.texto-intro {
+  flex: 1; 
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  max-width: 600px;
+  align-self: flex-start;
+}
+
+.contenido-principal{
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenido-principal p {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-left: -90px;
+}
+
+main.contenido-principal {
+  text-align: left;
+  max-width: 100%;
+  margin: 0;
+}
+
+.procesos p{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main.contenido-principal {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.variedades, .procesos {
+  margin-top: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.variedades h2, .procesos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}

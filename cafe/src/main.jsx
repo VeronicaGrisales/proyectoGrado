@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Inicio from './paginas/inicio.jsx';   // Página de inicio
+import Inicio from './paginas/Inicio.jsx';   // Página de inicio
 import App from './App.jsx';
-import './styles/index.css';  // Estilos globales
+import './styles/Inicio.css';  // Estilos globales
 
 // Definir las rutas
 const router = createBrowserRouter([
