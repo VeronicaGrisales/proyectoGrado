@@ -11,7 +11,6 @@ const router = createBrowserRouter([
     path: '/',
     element: <Inicio />,   // otra ruta (opcional)
   },
- 
 ])
 
 // Renderizar la aplicación

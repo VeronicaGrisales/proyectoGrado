@@ -2,14 +2,24 @@ import React from 'react';
 import '../styles/Inicio.css'; // Archivo de estilos para la página de inicio
 import Header from '../componentes/Header'; 
 import coffe from '../assets/coffe.jpg';
+import redcoffe from '../assets/redcoffe.jpg';
+import ronchoc from '../assets/ronchoc.jpg';
+import tosta from '../assets/tosta.jpg';
+import taza from '../assets/taza.jpg';
+import bolsa1 from '../assets/bolsa1.jpg';
+import bolsa3 from '../assets/bolsa3.jpg';  
+import drip from '../assets/drip.jpg';
+import lata from '../assets/lata.jpg';
 
 function Inicio() {
   return (
     <section className="inicio">
 
     <div className="escencia-cafe">
+
         <Header />
         {/* aqui debe de ir el menu */}
+
     <main className="contenido-principal">
       <h1 className='titulop'><strong>Bienvenido a Café Nazareth</strong></h1>
     <div className='seccion-intro'>
@@ -30,55 +40,45 @@ function Inicio() {
     </div>
     <div className='variedades'>
       <h1 className='titulop'>Descubre nuestras variedades</h1>
+
+      <div className='imagenes-inicio1'>
+
+      {/* imagenes   */}
+      <img src={bolsa1} alt="Bolsa blanca" />
+      <img src={lata} alt="Lata edición espcial" />
+      <img src={drip} alt="Drip de café" />
+      <img src={bolsa3} alt="Bolsa roja" />
     </div>
 
-    <div className='procesos'>
+    </div>
+
+    <section className='procesos'>
       <h1 className='titulop'>Conoce algunos de nuestros procesos</h1>
-      <p>Desde la semilla hasta el aroma final, cada etapa de proceso se realiza con cuidados artesanal.
-      Cada grano es seleccionado a mano, asegurando que solo los mejores lleguen a tu taza.
-      Conoce como llevamos el café del campo directamente a tu mesa.
+    <div className='texto-proceso'>
+      <p>Desde la semilla hasta el aroma final, cada paso en Café Nazareth es una historia de dedicación y amor
+      por el café. Seleccionamos a mano los mejores granos y los transformamos con procesos artesanales,
+      llevando así a tu taza el sabor más puro del campo colombiano.
       </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ut excepturi aliquam sequi! Doloremque consectetur est odio earum aut molestiae delectus, quo consequatur? Facilis maxime eum in numquam aperiam asperiores.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ut excepturi aliquam sequi! Doloremque consectetur est odio earum aut molestiae delectus, quo consequatur? Facilis maxime eum in numquam aperiam asperiores.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ut excepturi aliquam sequi! Doloremque consectetur est odio earum aut molestiae delectus, quo consequatur? Facilis maxime eum in numquam aperiam asperiores.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ut excepturi aliquam sequi! Doloremque consectetur est odio earum aut molestiae delectus, quo consequatur? Facilis maxime eum in numquam aperiam asperiores.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ut excepturi aliquam sequi! Doloremque consectetur est odio earum aut molestiae delectus, quo consequatur? Facilis maxime eum in numquam aperiam asperiores.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ut excepturi aliquam sequi! Doloremque consectetur est odio earum aut molestiae delectus, quo consequatur? Facilis maxime eum in numquam aperiam asperiores.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ut excepturi aliquam sequi! Doloremque consectetur est odio earum aut molestiae delectus, quo consequatur? Facilis maxime eum in numquam aperiam asperiores.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ut excepturi aliquam sequi! Doloremque consectetur est odio earum aut molestiae delectus, quo consequatur? Facilis maxime eum in numquam aperiam asperiores.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ut excepturi aliquam sequi! Doloremque consectetur est odio earum aut molestiae delectus, quo consequatur? Facilis maxime eum in numquam aperiam asperiores.
-      </p>
+      <p>Conoce nuestros procesos y descubre cómo convertimos la pasion en aroma.</p>
+      
+
+    <div className='imagenes-inicio1'>
+
+      {/* imagenes   */}
+      <img src={ronchoc} alt="Sembrando café" />
+      <img src={redcoffe} alt="Café en cereza, ya listo para cosechar" />
+      <img src={tosta} alt="Café tostado" />
+      <img src={taza} alt="Taza de café servido" />
     </div>
 
-    {/* <div className="galeria">
-      <div className="imagen-contenedor">
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Café Clásico" />
-        <h2>Café Clásico</h2>
-        <p>Un sabor tradicional que nunca pasa de moda.</p>
-      </div>
-      <div className="imagen-contenedor">
-        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Café Especial" />
-        <h2>Café Especial</h2>
-        <p>Un viaje de sabores en cada taza.</p>
-      </div>
-    </div> */}
+    <div className='pasos-proceso'>
+      {/* frase de cierre */}
+      <p>Cada paso refleja la pasión de un caficultor que convierte su esfuerzo en el sabor más puro del campo colombiano.</p>
+    </div>
+
+    </div>
+
+    </section>
   </section>
   );
 }

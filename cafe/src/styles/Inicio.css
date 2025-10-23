@@ -35,6 +35,12 @@ body {
   color: #222;
 }
 
+main.contenido-principal {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .inicio {
   margin-top: 120px; 
   padding: 0;
@@ -70,7 +76,6 @@ body {
 }
 
 .imagen-inicio img {
-  /*flex: 1;*/
   width: 90%;
   max-width: 450px;
   border-radius: 20px;
@@ -88,7 +93,6 @@ body {
   font-size: 1.5rem;
   line-height: 1.8;
   color: #333;
-  font-family: 'Poppins', sans-serif;
   text-align: left;
   max-width: 600px;
   align-self: flex-start;
@@ -109,32 +113,39 @@ body {
   margin-left: -90px;
 }
 
-main.contenido-principal {
-  text-align: left;
-  max-width: 100%;
-  margin: 0;
+
+/* Sección de procesos */
+
+.procesos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60 px 120px;
+  text-align: center;
 }
 
-.procesos p{
+.texto-proceso {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
-
-main.contenido-principal {
+  font-size: 1.2rem;
   text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
+  line-height: 1.8;
 }
 
-.variedades, .procesos {
-  margin-top: 60px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+.imagenes-inicio1 img {
+  margin: 10px;
+  width: 90%;
+  max-width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  justify-content: flex-end;
 }
-.variedades h2, .procesos h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+
+.imagenes-inicio1 img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
+
