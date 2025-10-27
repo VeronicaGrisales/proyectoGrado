@@ -43,10 +43,12 @@ main.contenido-principal {
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
+  flex: 1;
+  width: 100%;
 }
 
 .inicio {
-  margin-top: 120px; 
+  margin-top: 15px; 
   padding: 0;
 
 }
@@ -163,9 +165,8 @@ main.contenido-principal {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 60 px 120px;
-  text-align: center;
-  padding: 30px;
+  padding: 60px 100px;
+  text-align: center;  
 }
 
 .texto-proceso {

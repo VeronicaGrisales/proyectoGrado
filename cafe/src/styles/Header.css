@@ -10,7 +10,7 @@
 }
 
 .header {                                                                              
-  position: fixed;
+  position: sticky;
   display: flex;
   top: 0;
   left: 0;
@@ -22,6 +22,7 @@
   padding: 0 40px;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /* fuente por defecto */
   align-items: center;
+  z-index: 1000; /* asegura que el header esté por encima de otros elementos */
 }
 
 .logo-contenedor {

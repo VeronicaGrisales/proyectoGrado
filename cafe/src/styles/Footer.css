@@ -4,8 +4,10 @@
  padding: 40px 20px 15px;
  text-align: center;
  font-family: "Poppins", sans-serif;
- width: 100vw;
+ width: 100%;
  position: relative; 
+ margin-top: auto;
+ box-sizing: border-box;
 }
 
 .titulo-footer {
