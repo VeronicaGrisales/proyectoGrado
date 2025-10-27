@@ -31,7 +31,7 @@ function Header() {
       </div>
 
       <div className="carrito">
-         <FontAwesomeIcon icon={faShoppingCart} size="2x" color="000000" /> {/*icono del carrito de compras */}
+         <FontAwesomeIcon icon={faShoppingCart} size="2x" color="white" /> {/*icono del carrito de compras */}
       </div>
     </div>
     </header>

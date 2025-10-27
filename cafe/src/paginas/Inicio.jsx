@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/Inicio.css'; // Archivo de estilos para la página de inicio
 import Header from '../componentes/Header'; 
+import Footer from '../componentes/Footer';
+
+// Importación de imágenes
 import coffe from '../assets/coffe.jpg';
 import redcoffe from '../assets/redcoffe.jpg';
 import ronchoc from '../assets/ronchoc.jpg';
@@ -11,6 +14,9 @@ import bolsa3 from '../assets/bolsa3.jpg';
 import drip from '../assets/drip.jpg';
 import lata from '../assets/lata.jpg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 function Inicio() {
   return (
     <section className="inicio">
@@ -18,6 +24,7 @@ function Inicio() {
     <div className="escencia-cafe">
 
         <Header />
+        
         {/* aqui debe de ir el menu */}
 
     <main className="contenido-principal">
@@ -38,19 +45,34 @@ function Inicio() {
     </main>
 
     </div>
+    <section className='variedades-seccion'>
     <div className='variedades'>
       <h1 className='titulop'>Descubre nuestras variedades</h1>
+      <p className='nombreca'>En Café Nazareth celebramos la diversidad del café colombiano.
+      Cada variedad refleja el alma de nuestras montañas: aromas únicos, sabores auténticos y la dedicación de manos que cultivan con amor.</p>
 
       <div className='imagenes-inicio1'>
-
       {/* imagenes   */}
+      <div className='imgProducto'>
       <img src={bolsa1} alt="Bolsa blanca" />
+      <p className='nombreca'><strong>Variedad Caturra</strong></p>
+      </div>
+      <div className='imgProducto'>
       <img src={lata} alt="Lata edición espcial" />
+      <p className='nombreca'><strong>Lata edición especial</strong></p>
+      </div>
+      <div className='imgProducto'>
       <img src={drip} alt="Drip de café" />
+      <p className='nombreca'><strong>Drip Coffe</strong></p>
+      </div>
+      <div className='imgProducto'>
       <img src={bolsa3} alt="Bolsa roja" />
-    </div>
+      <p className='nombreca'><strong>Blend</strong></p>
+      </div>
 
     </div>
+    </div>
+    </section>
 
     <section className='procesos'>
       <h1 className='titulop'>Conoce algunos de nuestros procesos</h1>
@@ -59,26 +81,37 @@ function Inicio() {
       por el café. Seleccionamos a mano los mejores granos y los transformamos con procesos artesanales,
       llevando así a tu taza el sabor más puro del campo colombiano.
       </p>
-      <p>Conoce nuestros procesos y descubre cómo convertimos la pasion en aroma.</p>
-      
+      <p><strong>Conoce nuestros procesos y descubre cómo convertimos la pasion en aroma.</strong></p>
+      </div>
+    
 
-    <div className='imagenes-inicio1'>
-
+    <section className='imagenes-inicio2'>
       {/* imagenes   */}
       <img src={ronchoc} alt="Sembrando café" />
+      <div className='flecha'>
+        <FontAwesomeIcon icon={faArrowRight} style={{ color: "#6b4f3a" }} />
+      </div>
       <img src={redcoffe} alt="Café en cereza, ya listo para cosechar" />
+      <div className='flecha'>
+        <FontAwesomeIcon icon={faArrowRight} style={{ color: "#6b4f3a" }} />
+      </div>
       <img src={tosta} alt="Café tostado" />
+      <div className='flecha'>
+      <FontAwesomeIcon icon={faArrowRight} style={{ color: "#6b4f3a" }} />
+      </div>
       <img src={taza} alt="Taza de café servido" />
-    </div>
+    </section>
 
-    <div className='pasos-proceso'>
+    <div className='texto-proceso'>
       {/* frase de cierre */}
       <p>Cada paso refleja la pasión de un caficultor que convierte su esfuerzo en el sabor más puro del campo colombiano.</p>
     </div>
-
-    </div>
-
     </section>
+
+    
+      <Footer />
+    
+
   </section>
   );
 }

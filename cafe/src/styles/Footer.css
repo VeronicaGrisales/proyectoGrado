@@ -1,0 +1,50 @@
+.footer {
+ background-color: #6b4f3a; /* tono café */
+ color: #fff;
+ padding: 40px 20px 15px;
+ text-align: center;
+ font-family: "Poppins", sans-serif;
+ width: 100vw;
+ position: relative; 
+}
+
+.titulo-footer {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}   
+
+.titulo-footer h3 {
+  font-size: 1.9rem;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  margin-top: -18px; 
+}
+
+.titulo-footer p {
+  font-size: 1.0rem;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  margin-top: -18px; 
+}
+
+.footer-container {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ gap: 30px;
+ margin-bottom: 20px;
+ width: 100%;
+ max-width: 1200px;
+ margin-left: auto; 
+ margin-right: auto; 
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
