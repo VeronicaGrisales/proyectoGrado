@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Inicio from './paginas/Inicio.jsx';   // Página de inicio
-import App from './App.jsx';
+import Procesos from './paginas/Procesos.jsx'; // Página de procesos
+import Productos from './paginas/Productos.jsx'; // Página de productos
+import Contactanos from './paginas/Contactanos.jsx'; // Página de contáctenos
+
+// import App from './App.jsx';
 import './styles/Inicio.css';  // Estilos globales
 
 // Definir las rutas
@@ -11,6 +15,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <Inicio />,   // otra ruta (opcional)
   },
+  
+  {path: '/procesos', element: <Procesos />,},
+  {path: '/productos', element: <Productos />,},
+  {path: '/contactanos', element: <Contactanos />,},
 ])
 
 // Renderizar la aplicación

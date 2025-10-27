@@ -1,0 +1,35 @@
+.menu {
+  background-color: #6b4f3a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 60px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 0;
+  position: relative; /* Agrega esto */
+}
+
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.menu-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 10px 15px;
+}
+
+.menu-links a:hover,
+.menu-links a.active {
+  color: #d7b899; 
+}

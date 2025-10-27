@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Inicio.css'; // Archivo de estilos para la página de inicio
 import Header from '../componentes/Header'; 
 import Footer from '../componentes/Footer';
+import Menu from '../componentes/Menu';
 
 // Importación de imágenes
 import coffe from '../assets/coffe.jpg';
@@ -25,7 +26,7 @@ function Inicio() {
 
         <Header />
         
-        {/* aqui debe de ir el menu */}
+        <Menu />
 
     <main className="contenido-principal">
       <h1 className='titulop'><strong>Bienvenido a Café Nazareth</strong></h1>
