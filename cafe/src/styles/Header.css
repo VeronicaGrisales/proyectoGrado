@@ -105,6 +105,7 @@
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
   transition: 0.3s;
 }
+
 .carrito {
   font-size: 1.5rem;
   cursor: pointer;
@@ -114,5 +115,5 @@
 .carrito:hover {
   transform: scale(1.1);
   transition: 0.2s;
-    color: #333;
+  color: #333;
 }

@@ -53,7 +53,7 @@ function Inicio() {
       <div className='imagenes-inicio1'>
       {/* imagenes   */}
       <div className='imgProducto'>
-      <img src={bolsa1} alt="Bolsa blanca" />
+      <img src={bolsa1} alt="Variedad Caturra" />
       <p className='nombreca'><strong>Variedad Caturra</strong></p>
       </div>
       <div className='imgProducto'>
@@ -65,7 +65,7 @@ function Inicio() {
       <p className='nombreca'><strong>Drip Coffe</strong></p>
       </div>
       <div className='imgProducto'>
-      <img src={bolsa3} alt="Bolsa roja" />
+      <img src={bolsa3} alt="Blend" />
       <p className='nombreca'><strong>Blend</strong></p>
       </div>
 
@@ -103,7 +103,7 @@ function Inicio() {
     </section>
 
     <div className='texto-proceso'>
-      
+
       {/* frase de cierre */}
       <p>Cada paso refleja la pasión de un caficultor que convierte su esfuerzo en el sabor más puro del campo colombiano.</p>
     </div>

@@ -1,0 +1,109 @@
+.inicio-productos{
+    gap: 100%;
+}
+
+.tituloprin {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 3.9rem;
+    font-weight: 80;
+    color: #6b4f3a;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+
+.texto-proin {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+.prod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+
+
+.pro-info {
+    flex: 1;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.nombre-pro{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.5rem;
+    font-weight: 80;
+    color: #6b4f3a;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+
+.texto-producto{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.precio-carrito {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.valor {
+    background-color: #6b4f3a;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    font-family: "Lora", serif;
+}
+
+.galeria-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.galeria-productos img {
+    margin: 10px; 
+    width: 90%; 
+    max-width: 350px; 
+    border-radius: 20px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    justify-content: flex-end; 
+    overflow: hidden;
+}
+
+.galeria-productos img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.carritoo {
+    font-size: 1.0rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.carritoo:hover {
+    color: black;
+    transform: scale(1.2); 
+}
