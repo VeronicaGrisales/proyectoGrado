@@ -1,6 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import ReactDOM from 'react-dom/client';// Librería para renderizar la aplicación
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'; // Librerías para el enrutamiento
 import Layout from './Layout.jsx'; // Componente de diseño con Header, Menu y Footer
 import Inicio from './paginas/Inicio.jsx';   // Página de inicio
 import Procesos from './paginas/Procesos.jsx'; // Página de procesos

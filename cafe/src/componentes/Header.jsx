@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
+//se crea el componente Header
 
 function Header() {
   return (
@@ -30,6 +31,7 @@ function Header() {
         <input type="text" placeholder="Buscar..." />
       </div>
 
+    {/*carrito de compras */}
       <div className="carrito">
          <FontAwesomeIcon icon={faShoppingCart} size="2x" color="white" /> {/*icono del carrito de compras */}
       </div>

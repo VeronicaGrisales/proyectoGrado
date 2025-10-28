@@ -1,3 +1,5 @@
+/*Estilos del componente Contactanos*/
+
 .texto-contacto {
   text-align: center;
   margin-bottom: 20px 0;
@@ -32,4 +34,16 @@
 .imagenes-contacto img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+.link {
+  color: #6b4f3a; 
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: #d7b899;
+  transform: scale(1.05);
 }

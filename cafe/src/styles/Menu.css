@@ -1,3 +1,5 @@
+/*Estilos del componente Menu*/
+
 .menu {
   background-color: #6b4f3a;
   color: #fff;
@@ -29,6 +31,7 @@
   padding: 10px 15px;
 }
 
+/* Estilos para el enlace activo y al pasar el cursor, es decir cuando en el momento se este en la pagina  */
 .menu-links a:hover,
 .menu-links a.active {
   color: #d7b899; 

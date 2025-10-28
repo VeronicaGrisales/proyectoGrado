@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/Footer.css'; // Archivo de estilos del footer
 
 
+//se crea el componente Footer
+
 function Footer() {
     return (
 
@@ -17,6 +19,7 @@ function Footer() {
 
     </div>
 
+        {/* Columna 2: Parte inferior del footer */}
     <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Café Nazareth. Todos los derechos reservados.</p>
     </div>

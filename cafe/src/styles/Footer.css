@@ -1,13 +1,15 @@
+/*Estilos del componente Footer*/
+
 .footer {
- background-color: #6b4f3a; /* tono café */
- color: #fff;
- padding: 40px 20px 15px;
- text-align: center;
- font-family: "Poppins", sans-serif;
- width: 100%;
- position: relative; 
- margin-top: auto;
- box-sizing: border-box;
+  background-color: #6b4f3a; /* tono café */
+  color: #fff;
+  padding: 40px 20px 15px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  position: relative; 
+  margin-top: auto;
+  box-sizing: border-box;
 }
 
 .titulo-footer {
@@ -33,15 +35,15 @@
 }
 
 .footer-container {
- display: flex;
- justify-content: space-around;
- flex-wrap: wrap;
- gap: 30px;
- margin-bottom: 20px;
- width: 100%;
- max-width: 1200px;
- margin-left: auto; 
- margin-right: auto; 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .footer-bottom {

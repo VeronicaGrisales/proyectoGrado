@@ -1,9 +1,13 @@
 import React from "react";
-import '../styles/Procesos.css'; 
+import '../styles/Procesos.css'; // Archivo de estilos para la página de procesos
 
+
+//se crea el componente Procesos
 function Procesos() {   
     return (     
         <section className="procesos">
+
+            {/* Sección de introducción */}
             <div className="seccion-procesos">
                 <h1 className='titulop'><strong>Descubre nuestros procesos</strong></h1>
                 <p className="texto-prin">En Café Nazareth, cada grano es el reflejo del cuidado y la pasión de su productor, <strong> Robinson 
@@ -11,6 +15,8 @@ function Procesos() {
                 Desde la semilla hasta el aroma final, cada etapa se realiza con dedicación artesanal, 
                 respetando la tierra y el tiempo que da vida a un café verdaderamente especial.</p>
 
+
+                {/* Descripción detallada de los procesos */}
                 <div className='pasos-seguir'>
 
                 <div className='pasos'>
@@ -57,6 +63,8 @@ function Procesos() {
                 </div>
 
                 </div>
+
+                {/* Frase de cierre */}
                 <p className="texto-prin"> Cada paso refleja el esfuerzo, la dedicación y el amor de un caficultor que convierte su 
                 trabajo en un café con alma. </p>
             </div>

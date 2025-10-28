@@ -1,3 +1,5 @@
+/*Estilos del componente Header*/
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 /* Se importaron diferentes fuentes desde Google Fonts para mejorar la apariencia del texto en el header */
@@ -17,29 +19,29 @@
   width: 100%;
   height: 120px;
   justify-content: space-between;
-  background-color: #6b4f3a; /* tono café */
+  background-color: #6b4f3a; 
   color: white;
   padding: 0 40px;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /* fuente por defecto */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; 
   align-items: center;
   z-index: 1000; /* asegura que el header esté por encima de otros elementos */
 }
 
 .logo-contenedor {
-  width: 250px;       /* ancho máximo del logo */
-  height: 200px;      /* altura máxima del logo */
+  width: 250px;       
+  height: 200px;      
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow:hidden;  /* evita que el logo se salga del contenedor */
+  overflow:hidden;  
 }
 
 .logo {
   max-width: 100%;                                      
-  max-height: 26%;         /* ajusta la altura del logo al contenedor */
+  max-height: 26%;         
   object-fit: contain; 
-  transform: scale(2.3);     /*- aquí ajustas el tamaño visual, es decir que aumenta o disminuye unicament el logo*/
-  transform-origin: center; /* mantiene el logo centrado sin dañar los demás elementos */
+  transform: scale(2.3);     
+  transform-origin: center; 
 }
 
 /* Efecto hover para el logo, moviento del mouse*/
@@ -75,17 +77,17 @@
   display: flex;
   align-items: center;
   background-color: white;
-  border-radius: 30px;       /* bordes curvos */
+  border-radius: 30px;       
   padding: 8px 15px;
-  width: 200px;              /* ancho del cuadro */
-  margin-right: 40px; /* mueve ligeramente hacia la izquierda */
+  width: 200px;             
+  margin-right: 40px; 
 }
 
 .busqueda input {
   border: none;
   outline: none;
   width: 100%;
-  padding-left: 30px;        /* espacio para la lupa */
+  padding-left: 30px;        
   font-size: 1rem;
   background: transparent;
   color: #333;
@@ -94,8 +96,8 @@
 
 .icono-busqueda {
   position: absolute;
-  left: 12px;                /* coloca la lupa dentro */
-  color: black;           /* color de la lupa*/
+  left: 12px;                
+  color: black;           
   font-size: 1rem;
 }
 

@@ -12,13 +12,18 @@ import bolsa3 from '../assets/bolsa3.jpg';
 import drip from '../assets/drip.jpg';
 import lata from '../assets/lata.jpg';
 
+// Importación de iconos
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+
+//se crea el componente Inicio
 function Inicio() {
   return (
     <section className="inicio">
     <div className="escencia-cafe">
+
+      {/* Sección de bienvenida e introducción */}
     <main className="contenido-principal">
       <h1 className='titulop'><strong>Bienvenido a Café Nazareth</strong></h1>
     <div className='seccion-intro'>
@@ -37,6 +42,8 @@ function Inicio() {
     </main>
 
     </div>
+
+    {/* Sección de variedades */}
     <section className='variedades-seccion'>
     <div className='variedades'>
       <h1 className='titulop'>Descubre nuestras variedades</h1>
@@ -66,6 +73,7 @@ function Inicio() {
     </div>
     </section>
 
+    {/* Sección de procesos */}
     <section className='procesos'>
       <h1 className='titulop'>Conoce algunos de nuestros procesos</h1>
     <div className='texto-proceso'>
@@ -95,6 +103,7 @@ function Inicio() {
     </section>
 
     <div className='texto-proceso'>
+      
       {/* frase de cierre */}
       <p>Cada paso refleja la pasión de un caficultor que convierte su esfuerzo en el sabor más puro del campo colombiano.</p>
     </div>
