@@ -64,6 +64,9 @@
   font-style: italic;
   font-family: 'Dancing Script', cursive;
   margin-top: -18px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .derecha {
