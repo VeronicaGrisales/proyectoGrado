@@ -17,6 +17,7 @@ function Menu() {
                 <li><NavLink to="/procesos">Procesos</NavLink></li>
                 <li><NavLink to="/productos">Productos</NavLink></li>
                 <li><NavLink to="/contactanos">Contáctenos</NavLink></li>
+                <li><NavLink to="/nosotros">Nosotros</NavLink></li>
                 </ul>
             </nav> 
         </section>
