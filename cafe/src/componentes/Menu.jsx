@@ -18,6 +18,7 @@ function Menu() {
                 <li><NavLink to="/productos">Productos</NavLink></li>
                 <li><NavLink to="/contactanos">Contáctenos</NavLink></li>
                 <li><NavLink to="/nosotros">Nosotros</NavLink></li>
+                <li><NavLink to="/metodos">Métodos</NavLink></li>
                 </ul>
             </nav> 
         </section>

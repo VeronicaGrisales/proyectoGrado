@@ -47,3 +47,24 @@
   color: #d7b899;
   transform: scale(1.05);
 }
+
+.icono-contacto {
+  display: flex;
+  justify-content: center;   
+  gap: 12px;                
+  margin: 10px 0;
+}
+
+.icono-chat, .icono-correo {
+  color: #6b4f3a; 
+  font-size: 1.9rem; 
+  margin-right: 10px; 
+  vertical-align: middle; 
+  cursor: pointer;
+}
+
+.icono-chat:hover, .icono-correo:hover {
+  color: #d7b899; 
+  transform: scale(1.2); 
+  transition: all 0.3s ease;
+}

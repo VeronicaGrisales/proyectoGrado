@@ -27,6 +27,9 @@ function Productos() {
                 cuidadosamente cultivados y tostados para ofrecerte una experiencia única en cada taza.
                 Desde granos de origen único hasta mezclas exclusivas, descubre la pasión y dedicación 
                 que ponemos en cada producto.</p>
+                <p className="texto-proin"><strong>Todos nuestros cafés están disponibles en la molienda
+                que requieras:</strong> grano entero, espresso, filtro o prensa francesa.
+                Selecciona la variedad de tu preferencia y elige el tipo de molienda ideal para tu método de preparación.</p>
             </div>
 
             {/*sección de productos con su valor */}
@@ -80,7 +83,7 @@ function Productos() {
                     <p className="texto-producto">Bolsa 2.500 gramos ideal para tu oficina, familia o negocio,
                     con la mejor relación precio, cantidad y calidad.
                     </p>
-                    <p className="texto-producto">Variedad caturra.</p>
+                    <p className="texto-producto">Variedad caturra</p>
                     <div className="precio-carrito">
                     <p className="valor">$170.000</p>
                     <div className="carritoo">
@@ -138,7 +141,7 @@ function Productos() {
                     única. Una mezcla armoniosa de caturra, castillo y variedad colombia, en un práctico drip
                     que te permite vivir el sabor del café a donde quiera que vayas.
                     </p>
-                    <p className="texto-producto">Presentación individual.</p>
+                    <p className="texto-producto">Presentación individual</p>
                     <div className="precio-carrito">
                     <p className="valor">$8.000</p>
                     <div className="carritoo">
@@ -158,7 +161,7 @@ function Productos() {
                     especial de café tostado no solo deleita tu paladar, sino que tambie preserva la frescura 
                     en su hermosa lata reutilizable. ¡Un diseño que enamora y un sabor que perdura!
                     </p>
-                    <p className="texto-producto">En grano o molido.</p>
+                    <p className="texto-producto">En grano o molido</p>
                     <div className="precio-carrito">
                     <p className="valor">$40.000</p>
                     <div className="carritoo">

@@ -81,7 +81,7 @@ function Inicio() {
       por el café. Seleccionamos a mano los mejores granos y los transformamos con procesos artesanales,
       llevando así a tu taza el sabor más puro del campo colombiano.
       </p>
-      <p><strong>Conoce nuestros procesos y descubre cómo convertimos la pasion en aroma.</strong></p>
+      <p><strong>Conoce nuestros procesos y descubre cómo convertimos la pasion en aroma</strong></p>
       </div>
     
 
@@ -105,7 +105,7 @@ function Inicio() {
     <div className='texto-proceso'>
 
       {/* frase de cierre */}
-      <p>Cada paso refleja la pasión de un caficultor que convierte su esfuerzo en el sabor más puro del campo colombiano.</p>
+      <p>Cada paso refleja la pasión de un caficultor que convierte su esfuerzo en el sabor más puro del campo colombiano</p>
     </div>
     </section>   
 

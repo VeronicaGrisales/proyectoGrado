@@ -1,6 +1,7 @@
 import React from "react";
 
-import nosotros from '../assets/nosotros.png'; //importación de imagenes
+ //importación de imagenes
+import roncho from '../assets/roncho.jpg';
 
 //no se creo un archivo css ya que se usaran los estilos de Contactanos.jsx
 
@@ -32,7 +33,7 @@ function Nosotros() {
             {/* Imagen decorativa  */}
             <div className='imagenes-contacto'>
                 <div className='imgcontacto'>
-                <img src={nosotros} alt="nosotros" />
+                <img src={roncho} alt="cafe" />
             </div>
             </div>
         </section>

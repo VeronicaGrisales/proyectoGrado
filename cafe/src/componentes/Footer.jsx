@@ -13,8 +13,8 @@ function Footer() {
         {/*  Columna 1: Información básica */}
     <div className="titulo-footer">
         <h3>Café Nazareth</h3>
-        <p>Tu refugio de sabor y calidez.</p>
-        <p>Desde las montañas colombianas, cultivamos con amor el mejor café artesanal.</p>
+        <p>Tu refugio de sabor y calidez</p>
+        <p>Desde las montañas colombianas, cultivamos con amor el mejor café artesanal</p>
     </div>
 
     </div>

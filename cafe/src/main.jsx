@@ -9,6 +9,7 @@ import Procesos from './paginas/Procesos.jsx'; // Página de procesos
 import Productos from './paginas/Productos.jsx'; // Página de productos
 import Contactanos from './paginas/Contactanos.jsx'; // Página de contáctenos
 import Nosotros from './paginas/Nosotros.jsx'; // Página de nosotros
+import Metodos from './paginas/Metodos.jsx'; // Página de métodos
 
 // import App from './App.jsx';
 import './styles/Inicio.css';  // Estilos globales
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         path: 'nosotros',
         element: <Nosotros />,
       },
+      {
+        path: 'metodos',
+        element: <Metodos />,
+      }
     ],
   },
 ]);
