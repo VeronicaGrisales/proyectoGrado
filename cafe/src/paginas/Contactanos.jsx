@@ -43,8 +43,24 @@ function Contactanos() {
                 </div>
 
                 <p className="texto-contacto"><strong>Visitanos</strong></p>
+
+
+                {/* Esto se realiza por medio de la opcion del google maps compartiendo ubicación en 
+                la opción de incorporar un mapa. */}
+                <div className="mapa-ubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.131983295402!2d-75.51256772602855!3d5.976557229279606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4691ea2b06d03b%3A0x8c8077c653317b7c!2sEscuela%20Nazareth!5e0!3m2!1ses-419!2sco!4v1763601004231!5m2!1ses-419!2sco"
+                    width="100%"
+                    height="350"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+                </div>
+
                 <div className='info-contacto'>
-                    <p className="texto-pasos"><strong>Dirección:</strong> Vereda Nazareth sector el colegio, Municipio de El Retiro, 
+                    <p className="texto-direccion"><strong>Dirección:</strong> Vereda Nazareth sector el colegio, Municipio de El Retiro, 
                     Departamento de Antioquia, Colombia.</p>
                 </div>
                 
