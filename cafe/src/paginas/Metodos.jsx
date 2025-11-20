@@ -7,10 +7,11 @@ import moka from '../assets/moka.png';
 import esspreso from '../assets/esspreso.png';
 import colador from '../assets/colador.png';
 
-import '../styles/Productos.css'; // Archivo de estilos para la página de productos, ya que se reutilizaron varias elementos
+import '../styles/Productos.css';
+// Archivo de estilos para la página de productos, ya que se reutilizaron varias elementos
 
-//se crea el componente Productos
-function Productos() {   
+//se crea el componente Metodos
+function Metodos() {   
     return (     
         <section className="productos">
 
@@ -25,7 +26,7 @@ function Productos() {
                 más intenso, aquí encontrarás el método ideal para ti.</p>
                 </div>
 
-            {/*sección de productos con su valor */}
+            {/*sección de metodos */}
             <div className="galeria-productos">
 
                 <div className="pro">
@@ -138,4 +139,4 @@ function Productos() {
         
     );
 }   
-export default Productos;
+export default Metodos;
