@@ -34,6 +34,7 @@ function Header() {
     {/*carrito de compras */}
       <div className="carrito">
          <FontAwesomeIcon icon={faShoppingCart} size="2x" color="white" /> {/*icono del carrito de compras */}
+      <span className="contador-carrito">0</span>
       </div>
     </div>
     </header>
