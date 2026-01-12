@@ -18,8 +18,34 @@ export const CartProvider = ({ children }) => {
     });
 };
 
+
+    // Eliminar producto
+    const eliminarProducto = (id) => {
+        setCarrito(carrito.filter((item) => item.id !== id));
+    };
+
+    // Aumentar cantidad
+    const aumentarCantidad = (id) => {
+        setCarrito(
+            carrito.map((item) =>
+                item.id === id ? { ...item, cantidad: item.cantidad + 1 } : item
+            )
+        );
+    };
+
+    // Disminuir cantidad
+    const disminuirCantidad = (id) => {
+        setCarrito(
+            carrito.map((item) =>
+                item.id === id
+                    ? { ...item, cantidad: item.cantidad > 1 ? item.cantidad - 1 : 1 }
+                    : item
+            )
+        );
+    };
+
 return (
-    <CartContext.Provider value={{ carrito, agregarAlCarrito }}>
+    <CartContext.Provider value={{ carrito, agregarAlCarrito, eliminarProducto, aumentarCantidad, disminuirCantidad }}>
         {children}
     </CartContext.Provider>
 );

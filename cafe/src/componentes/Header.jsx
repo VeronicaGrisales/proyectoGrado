@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Header.css'; // Archivo de estilos del header
 import logo from '../assets/logo1.png'; 
 // import { CartContext } from '../context/CartContext';
-
+import { useCart } from '../CartContext/useCart.jsx'; // Importar hook
 
 
 /*URL para importar los diferentes iconos utilizados*/
@@ -14,7 +14,12 @@ import { Link } from 'react-router-dom';
 //se crea el componente Header
 
 function Header() {
-  // cart es un arreglo con los productos agregados al carrito
+
+  const { carrito } = useCart();
+  
+  // Sumar todas las cantidades de productos en el carrito
+  const totalProductos = carrito.reduce((acc, item) => acc + item.cantidad, 0);
+
   return (
   
     <header className="header">
@@ -41,7 +46,7 @@ function Header() {
         <Link to='/carrito' className="enlace-carrito">
          <FontAwesomeIcon icon={faShoppingCart} size="2x" color="white" /> {/*icono del carrito de compras */} 
         </Link>
-        <span className="contador-carrito">0</span>
+        <span className="contador-carrito">{totalProductos}</span>
        {/*contador del carrito de compras */}
       </div>
     </div> 

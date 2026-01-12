@@ -10,15 +10,22 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = () => {
 
-    const {carrito} = useCart(); //esto se emplea para recibir los datos del carrito
+    const {carrito, eliminarProducto, aumentarCantidad, disminuirCantidad} = useCart(); //esto se emplea para recibir los datos del carrito
+    
+    // Calcular total a pagar
+    const totalPagar = carrito.reduce(
+        (acc, producto) => acc + producto.precio * producto.cantidad,
+        0
+    );
 
 return (
 
         
     <div className="contador-carri">
         <h2 className='tu'>Tu carrito de compras</h2>
+
         {carrito.length === 0 ? (
-            <p>Tu carrito está vacío.</p>
+            <p className='tu'>Tu carrito está vacío.</p>
         ) : (
             <>
 
@@ -45,7 +52,7 @@ return (
                                 <p>${productos.precio.toLocaleString()}</p>
 
                                 <div className="quantity-controls">
-                                    <button className="quantity-btn"> {/*botón para disminuir la cantidad*/}
+                                    <button className="quantity-btn"  onClick={() => disminuirCantidad(productos.id)} > {/*botón para disminuir la cantidad*/}
                                         -
                                     </button>
 
@@ -55,24 +62,31 @@ return (
                                     value={productos.cantidad}
                                     ></input>
 
-                                    <button className="quantity-btn"> {/*botón para aumentar la cantidad*/}
+                                    <button className="quantity-btn" onClick={() => aumentarCantidad(productos.id)}> {/*botón para aumentar la cantidad*/}
                                         +
                                     </button>
                                     </div>
 
                                     <p>${(productos.precio * productos.cantidad).toLocaleString()}</p>
 
-                                    <button className="delete-btn" onClick={() => eliminarProducto(producto.id)}>
+                                    <button className="delete-btn" onClick={() => eliminarProducto(productos.id)}>
                                         <FontAwesomeIcon icon={faTrash} />
                                     </button>
 
                             </li>
+
+                            
                         )
 
                     })
                 }
         
             </ul>
+                    {/* Total a pagar y botón */}
+                    <div className="total-pago">
+                        <h3 className='tu'>Total a pagar: <span>${totalPagar.toLocaleString()}</span></h3>
+                            <button className="btn-pagar">Pagar</button>
+                    </div>
             </>
         )}
     </div>
