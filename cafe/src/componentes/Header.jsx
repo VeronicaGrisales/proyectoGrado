@@ -38,8 +38,9 @@ function Header() {
 
     {/*carrito de compras */}
       <div className="carrito">
-        <Link to='/carrito' className="enlace-carrito"></Link>
+        <Link to='/carrito' className="enlace-carrito">
          <FontAwesomeIcon icon={faShoppingCart} size="2x" color="white" /> {/*icono del carrito de compras */} 
+        </Link>
         <span className="contador-carrito">0</span>
        {/*contador del carrito de compras */}
       </div>

@@ -1,7 +1,12 @@
 import React from 'react'
 import '../styles/Cart.css' // Archivo de estilos para el carrito
-import { useCart } from '../CartContext/CartContext.jsx' // Importar el hook personalizado para usar el contexto del carrito
 
+import { useCart } from "../CartContext/useCart.jsx";
+ // Importar el hook personalizado para usar el contexto del carrito
+
+// Importa FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = () => {
 
@@ -9,8 +14,9 @@ const Cart = () => {
 
 return (
 
-    <div className="contador-carrito">
-        <h2>TU <span>Carrito de Compras</span></h2>
+        
+    <div className="contador-carri">
+        <h2 className='tu'>Tu carrito de compras</h2>
         {carrito.length === 0 ? (
             <p>Tu carrito está vacío.</p>
         ) : (
@@ -31,7 +37,7 @@ return (
                         return (
 
                             <li className='cart-item' key ={productos.id}>
-                                <div className="texto-producto">
+                                <div className="text-producto">
                                     <img src ={productos.imagen} alt={productos.nombre} className="product-image" />
                                     <span>{productos.nombre}</span>
                                 </div>
@@ -56,8 +62,8 @@ return (
 
                                     <p>${(productos.precio * productos.cantidad).toLocaleString()}</p>
 
-                                    <button className="delete-btn">
-                                        <i className="fas fa-trash"></i>
+                                    <button className="delete-btn" onClick={() => eliminarProducto(producto.id)}>
+                                        <FontAwesomeIcon icon={faTrash} />
                                     </button>
 
                             </li>

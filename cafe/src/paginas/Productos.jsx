@@ -1,5 +1,5 @@
 import React from "react";
-import { useCart } from "../CartContext/CartContext.jsx";
+import { useCart } from "../CartContext/useCart.jsx"; // Importar el hook personalizado para usar el contexto del carrito
 
 // Icono carrito
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
