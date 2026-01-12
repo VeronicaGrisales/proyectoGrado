@@ -10,9 +10,13 @@ import Productos from './paginas/Productos.jsx'; // Página de productos
 import Contactanos from './paginas/Contactanos.jsx'; // Página de contáctenos
 import Nosotros from './paginas/Nosotros.jsx'; // Página de nosotros
 import Metodos from './paginas/Metodos.jsx'; // Página de métodos
+import Cart from './cart/Cart.jsx'; // Página del carrito de compras
 
 // import App from './App.jsx';
 import './styles/Inicio.css';  // Estilos globales
+import { CartProvider } from './CartContext/CartContext.jsx';
+ // Proveedor del contexto del carrito de compras
+
 
 // Definir las rutas con Layout
 const router = createBrowserRouter([
@@ -43,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: 'metodos',
         element: <Metodos />,
+      },
+      {
+        path: 'carrito',
+        element: <Cart />,
       }
     ],
   },
@@ -51,7 +59,9 @@ const router = createBrowserRouter([
 // Renderizar la aplicación
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+  <CartProvider>
     <RouterProvider router={router} />
+  </CartProvider>
   </React.StrictMode>
 );
 
