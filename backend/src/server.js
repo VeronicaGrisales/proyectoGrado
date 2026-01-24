@@ -1,3 +1,6 @@
+//  Carga las variables de entorno (.env)
+import 'dotenv/config';
+
 // Importa la configuración principal de la aplicación
 import app from './app.js';
 
