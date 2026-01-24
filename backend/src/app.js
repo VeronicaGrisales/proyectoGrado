@@ -4,6 +4,9 @@ import express from 'express';
 // Importa CORS para permitir peticiones desde el frontend
 import cors from 'cors';
 
+// Importa rutas del chatbot
+import chatbotRoutes from './routes/chatbot.routes.js';
+
 // Crea una instancia de la aplicación Express
 const app = express();
 
@@ -17,6 +20,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Backend Café Nazareth funcionando correctamente');
 });
+
+// 👉 RUTAS DEL CHATBOT
+app.use('/api', chatbotRoutes);
 
 // Exporta la app para que server.js la pueda usar
 export default app;

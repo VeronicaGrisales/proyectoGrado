@@ -1,19 +1,26 @@
-// Importa la librería mysql2
-import mysql from 'mysql2';
+// Importa mysql2 (permite promesas)
+import mysql from 'mysql2/promise';
 
-// Crea la conexión con la base de datos MySQL
-export const db = mysql.createConnection({
-  host: 'localhost',        // Servidor de la BD
-  user: 'root',             // Usuario MySQL
-  password: '',             // Contraseña (XAMPP por defecto es vacía)
-  database: 'cafe_nazareth' // Nombre de la base de datos
+// Crea el pool de conexiones
+const pool = mysql.createPool({
+    host: 'localhost',      // servidor MySQL
+    user: 'root',           // usuario (XAMPP casi siempre es root)
+    password: '',           // contraseña (vacía por defecto en XAMPP)
+    database: 'cafe_nazareth', // nombre de la base de datos
+    port: 3307, // puerto de MySQL en XAMPP
+    waitForConnections: true, // Espera si no hay conexiones disponibles
+    connectionLimit: 10,   // Máximo de conexiones simultáneas
+    queueLimit: 0        // 0 = sin límite de espera
 });
+
 
 // Prueba la conexión
-db.connect((err) => {
-    if (err) {
-        console.error('Error conectando a MySQL:', err);
-    } else {
-    console.log('Conectado a MySQL correctamente ☕');
-    }
-});
+try {
+    const connection = await pool.getConnection();
+    console.log('Conectado a MySQL - Café Nazareth');
+    connection.release();
+} catch (error) {
+    console.error(' Error conectando a MySQL:', error);
+}
+
+export default pool;
