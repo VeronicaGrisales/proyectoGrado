@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     res.send('Backend Café Nazareth funcionando correctamente');
 });
 
-// 👉 RUTAS DEL CHATBOT
+// RUTAS DEL CHATBOT
 app.use('/api', chatbotRoutes);
 
 // Exporta la app para que server.js la pueda usar
