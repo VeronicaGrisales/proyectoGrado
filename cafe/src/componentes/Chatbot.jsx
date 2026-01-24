@@ -48,7 +48,7 @@ const Chatbot = () => {
       // Evita enviar mensajes vacíos
       if (!input.trim()) return;
 
-      
+
 
     // 1️ Agregamos el mensaje del usuario al estado
     const newMessage = { from: 'user', text: input };
@@ -139,7 +139,7 @@ const Chatbot = () => {
               value={input}
               onChange={e => setInput(e.target.value)}
               onKeyDown={handleKeyPress}
-              placeholder="Escribe tu mensaje..."
+              placeholder="Escribe tu mensaje por favor..."
             />
             <button className='enviar' onClick={handleSend}>Enviar</button>
           </div>
