@@ -1,0 +1,130 @@
+/* Contenedor principal fijo en la pantalla */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Para que siempre esté encima de todo */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-style: italic;
+ font-family: "Poppins", sans-serif;
+}
+
+/* Botón flotante tino */
+.chat-trigger {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  overflow: hidden;
+  border: 3px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.chat-trigger:hover {
+  transform: scale(1.1);
+}
+
+.chat-trigger img {
+  width: 80%;
+  height: 100%;
+}
+
+/* Ventana del Chat */
+.chat-window {
+  width: 450px;
+  height: 400px; 
+  background-color: #BCAAA4;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #8D6E63;
+}
+
+/* Cabecera del chat */
+.chat-header {
+    background-color: #5D4037; 
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Cuerpo del chat */
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #D7CCC8; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Burbujas de mensaje */
+.message {
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-width: 90%;
+}
+
+.bot-message {
+  background-color: #A1887F; 
+  color: #3E2723;
+  align-self: flex-start;
+  border-bottom-left-radius: 2px;
+}
+
+/* Animación de entrada suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* barra donde interactua el usuario */
+
+.enviar{
+    margin-left: 5px;
+    padding: 8px 12px;
+    background-color: #5D4037;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+
+.escribe{
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    flex: 1;
+    width: 83%;
+}

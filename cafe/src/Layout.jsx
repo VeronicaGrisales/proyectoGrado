@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom'; // Importa Outlet para renderizar las
 import Header from './componentes/Header'; 
 import Menu from './componentes/Menu';
 import Footer from './componentes/Footer';
+import Chatbot from './componentes/chatbot';
 
 // Importación de estilos
 import './styles/App.css';
@@ -25,6 +26,9 @@ function Layout() {
 
       </main>
       
+      {/* Componente del chatbot */}
+      <Chatbot />
+
       {/* Componente de pie de página */}
       <Footer />
     </div>
