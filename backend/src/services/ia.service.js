@@ -1,11 +1,10 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // 1. Inicializamos la IA fuera de la función para que sea más rápido
-// const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);  --> este esta funcionando
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY); 
 
-
-const API_KEY = 'AIzaSyCgC6EkTWD_khbrmUsYYKWiRdaTKNReYn0';
-const genAI =new GoogleGenerativeAI(API_KEY)
+// const API_KEY = 'AIzaSyCgC6EkTWD_khbrmUsYYKWiRdaTKNReYn0';
+// const genAI =new GoogleGenerativeAI(API_KEY)
 
 export async function responderConIA(pregunta) {
 
