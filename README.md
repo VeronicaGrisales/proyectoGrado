@@ -32,12 +32,21 @@ Instalación y configuración
 1. **Clonar el repositorio**
    https://github.com/VeronicaGrisales/proyectoGrado.git
 
-2. **Configurar el backend:**
-   - Entrar a la carpeta backend.
-   - Ejecutar npm install para instalar todas las depedencias instaladas.
-   - iniciar con "node src/server.js", para activar el entorno de ejecución, establecer la conexion con la base de datos y permitir la comunicación entre el frontend con el chatbot.
+2. **Configurar la base de datos**
+   - Instalar mysql (con workbench o xampp)
+   - Crear una base de datos llamda `cafe_nazareth`
+   - Poner la base de datos por defecto si esta usando workbench
+   - Copiar el código sql de la carpeta `/base_de_datos` y pegarlo en una nueva consulta sql
+   - Ejecutarlo, si todo sale bien se debe crear las tablas con la información para poder probar la aplicación
+   - En el archivo llamado `db.js` en la carpeta `/backend/config` configurar usuario, contraseña y puerto asignados a la instalación de mysql
 
-3. **Configurar el frontend:**
+3. **Configurar el backend:**
+   - Entrar a la carpeta `/backend`.
+   - Pegar el archivo `.env` con la api key de gemini proporcionada
+   - Ejecutar `npm install` para instalar todas las depedencias instaladas.
+   - iniciar con `node src/server.js`, para activar el entorno de ejecución, establecer la conexion con la base de datos y permitir la comunicación entre el frontend con el chatbot.
+
+4. **Configurar el frontend:**
    - Entrar a la carpeta cafe.
-   - Ejecutar npm install para instalar todas las depedencias instaladas.
-   - Iniciar con "npm run dev"
+   - Ejecutar `npm install` para instalar todas las depedencias instaladas.
+   - Iniciar con `npm run dev`
